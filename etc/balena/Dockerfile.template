@@ -57,6 +57,8 @@ ENV WEB_GUI=${WEB_GUI:-1}
 ENV REST_API=${REST_API:-1}
 ENV DOCKER 1
 
+ENV UDEV=on
+
 RUN env
 
 COPY . /app
