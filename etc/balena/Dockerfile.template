@@ -100,6 +100,6 @@ RUN install_packages $OTBR_DOCKER_REQS $OTBR_DOCKER_DEPS \
     && rm -rf /var/lib/apt/lists/* \
   ))
 
-ENTRYPOINT ["/app/etc/docker/docker_entrypoint.sh"]
+ENTRYPOINT ["/app/etc/balena/docker_entrypoint.sh"]
 
 EXPOSE 80
